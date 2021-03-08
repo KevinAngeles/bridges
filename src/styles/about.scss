@@ -1,0 +1,152 @@
+.main {
+  margin: 0 auto;
+  max-width: 1500px;
+  &__block {
+    display: grid;
+  }
+  &__container {
+    display: flex;
+
+    &-description {
+      width: 50%;
+    }
+    &-picture {
+      display: flex;
+      width: 50%;
+      align-self: center;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+  &__paragraph {
+    color: #666666;
+    font: 16px "Open Sans";
+    margin: 0 0 32px;
+    width: 74%;
+    line-height: 29.6px;
+  }
+  &__title {
+    color: #4d4d4d;
+    font: 62.7px "Open sans";
+    margin: 0 0 47.04px;
+    text-align: center;
+  }
+  &__subheader {
+    color: #4d4d4d;
+    font: 32px "Open Sans";
+    margin: 0 0 22.4px;
+  }
+}
+.member {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: 30% 1fr 30%;
+  grid-template-areas:
+    'member__title member__title member__title' 
+    'goff__name goff__picture goff__description'
+    'xu__description xu__description xu__name'
+    'davis__name davis__picture davis__description'
+    'smith__description smith__description smith__name';
+  padding-left: 10%;
+  padding-right: 10%;
+  &__title{
+    grid-area: member__title;
+    text-align: center;
+  }  
+}
+.goff {
+  &__description {
+    grid-area: goff__description;
+    padding-left: 2%;
+  }
+  &__name {
+    grid-area: goff__name;
+    text-align: center;
+  }
+  &__picture {
+    grid-area: goff__picture;
+    margin: 2%;
+    justify-self: right;
+    border-radius: 5px;
+  }
+  &__position {
+    grid-area: goff__position;
+    color: #666;
+    font: 20.8px "Open Sans";
+  }
+  &__paragrpah {
+    grid-area: goff__paragraph;
+  }
+}
+.xu {
+  &__name {
+    grid-area: xu__name;
+    text-align: center;
+  }
+  &__description {
+    grid-area: xu__description;
+    text-align: right;
+  }
+  &__picture {
+    grid-area: xu__picture;
+    float: right;
+    margin: 2%;
+    border-radius: 5px;
+  }
+  &__position {
+    grid-area: xu__position;
+    color: #666;
+    font: 20.8px "Open Sans";
+  }
+  &__paragrpah {
+    grid-area: xu__paragraph;
+  }
+}
+.davis {
+  &__description {
+    grid-area: davis__description;
+  }
+  &__name {
+    grid-area: davis__name;
+    text-align: center;
+  }
+  &__picture {
+    grid-area: davis__picture;
+    margin: 2%;
+    justify-self: right;
+    border-radius: 5px;
+  }
+  &__position {
+    color: #666;
+    font: 20.8px "Open Sans";
+    grid-area: davis__position;
+  }
+  &__paragrpah {
+    grid-area: davis__paragraph;
+  }
+}
+.smith {
+  &__name {
+    grid-area: smith__name;
+    text-align: center;
+  }
+  &__description {
+    grid-area: smith__description;
+    text-align: right;
+  }
+  &__picture {
+    grid-area: smith__picture;
+    float: right;
+    margin: 2%;
+    border-radius: 5px;
+  }
+  &__position {
+    color: #666;
+    font: 20.8px "Open Sans";
+    grid-area: smith__position;
+  }
+  &__paragrpah {
+    grid-area: smith__paragraph;
+  }
+}
